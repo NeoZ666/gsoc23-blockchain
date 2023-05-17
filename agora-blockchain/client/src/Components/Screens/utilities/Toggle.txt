@@ -1,0 +1,56 @@
+import { MoonIcon } from "../public/assets/moon.svg";
+import { SunIcon } from "../public/assets/sun.svg";
+import { createContext, useState } from 'react';
+
+export default function ThemeToggle() {
+    const [isEnabled, setIsEnabled] = useState(false);
+  
+    useEffect(() => {
+      updateTheme(isEnabled);
+    }, [isEnabled]);
+    const toggleState = () => {
+      setIsEnabled((prevState) => !prevState);
+    };
+
+    const updateTheme = (isDarkEnabled) => {
+
+        // Get all available styles
+        const styles = getComputedStyle(document.body);
+      
+          // Get the --black and --white variable values
+          const black = styles.getPropertyValue("--black");
+        const white = styles.getPropertyValue("--white");
+
+        const docEl = document.documentElement;
+
+        if (isDarkEnabled) {
+            docEl.style.setProperty("--background", black);
+            docEl.style.setProperty("--foreground", white);
+        } else {
+            docEl.style.setProperty("--background", white);
+            docEl.style.setProperty("--foreground", black);
+        }
+    };
+
+    return (
+        <label className="toggle-wrapper" htmlFor="toggle">
+          <div className={`toggle ${isEnabled ? "enabled" : "disabled"}`}>
+            <span className="hidden">
+                {isEnabled ? "Enable Light Mode" : "Enable Dark Mode"}
+            </span>
+            <div className="icons">
+                <SunIcon />
+                <MoonIcon />
+            </div>
+            <input
+              id="toggle"
+              name="toggle"
+              type="checkbox"
+              checked={isEnabled}
+              onClick={toggleState}
+            />
+          </div>
+        </label>
+      );
+}
+

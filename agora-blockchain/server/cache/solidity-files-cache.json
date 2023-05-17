@@ -1,0 +1,571 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "E:\\GSoC '23\\Agora blockchain\\agora-blockchain\\server\\contracts\\Authentication.sol": {
+      "lastModificationDate": 1680360571180,
+      "contentHash": "0e87972ef8e7571be52d02b251779cf4",
+      "sourceName": "contracts/Authentication.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ElectionOrganizer.sol",
+        "./Voter.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "Authentication"
+      ]
+    },
+    "E:\\GSoC '23\\Agora blockchain\\agora-blockchain\\server\\contracts\\ElectionOrganizer.sol": {
+      "lastModificationDate": 1680360571181,
+      "contentHash": "4dca4a33282febeb1feff51a2989a292",
+      "sourceName": "contracts/ElectionOrganizer.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Election.sol",
+        "./ElectionStorage.sol",
+        "./ElectionFactory.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "ElectionOrganizer"
+      ]
+    },
+    "E:\\GSoC '23\\Agora blockchain\\agora-blockchain\\server\\contracts\\Voter.sol": {
+      "lastModificationDate": 1680360571181,
+      "contentHash": "17c952028af190225729144c086c767a",
+      "sourceName": "contracts/Voter.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Election.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "Voter"
+      ]
+    },
+    "E:\\GSoC '23\\Agora blockchain\\agora-blockchain\\server\\contracts\\Election.sol": {
+      "lastModificationDate": 1680360571180,
+      "contentHash": "ea4498f24ea30cde7eaa07986771efa1",
+      "sourceName": "contracts/Election.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ballot/Ballot.sol",
+        "./resultCalculator/ResultCalculator.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "Election"
+      ]
+    },
+    "E:\\GSoC '23\\Agora blockchain\\agora-blockchain\\server\\contracts\\ElectionStorage.sol": {
+      "lastModificationDate": 1680360571181,
+      "contentHash": "1d4677e3a26351654a96286f98a5c29a",
+      "sourceName": "contracts/ElectionStorage.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Election.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "ElectionStorage"
+      ]
+    },
+    "E:\\GSoC '23\\Agora blockchain\\agora-blockchain\\server\\contracts\\ElectionFactory.sol": {
+      "lastModificationDate": 1680360571180,
+      "contentHash": "0e002fbd1766cff6d4d1f00d7015c7b0",
+      "sourceName": "contracts/ElectionFactory.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Election.sol",
+        "./ballot/Ballot.sol",
+        "./ballot/GeneralBallot.sol",
+        "./ballot/PreferenceBallot.sol",
+        "./resultCalculator/ResultCalculator.sol",
+        "./resultCalculator/GeneralResults.sol",
+        "./resultCalculator/Oklahoma.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "ElectionFactory"
+      ]
+    },
+    "E:\\GSoC '23\\Agora blockchain\\agora-blockchain\\server\\contracts\\ballot\\Ballot.sol": {
+      "lastModificationDate": 1680360571182,
+      "contentHash": "bfb9ecb287f9783f9c6567eda0af4e7d",
+      "sourceName": "contracts/ballot/Ballot.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Election.sol",
+        "../resultCalculator/ResultCalculator.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "Ballot"
+      ]
+    },
+    "E:\\GSoC '23\\Agora blockchain\\agora-blockchain\\server\\contracts\\resultCalculator\\ResultCalculator.sol": {
+      "lastModificationDate": 1680360571184,
+      "contentHash": "b98ea7294bf3f4f70ef41047cf8aaacb",
+      "sourceName": "contracts/resultCalculator/ResultCalculator.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ballot/Ballot.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "ResultCalculator"
+      ]
+    },
+    "E:\\GSoC '23\\Agora blockchain\\agora-blockchain\\server\\contracts\\ballot\\GeneralBallot.sol": {
+      "lastModificationDate": 1680360571182,
+      "contentHash": "8650d6234eef1b29b20168cfc0e1c5c4",
+      "sourceName": "contracts/ballot/GeneralBallot.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Ballot.sol",
+        "../Election.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "GeneralBallot"
+      ]
+    },
+    "E:\\GSoC '23\\Agora blockchain\\agora-blockchain\\server\\contracts\\ballot\\PreferenceBallot.sol": {
+      "lastModificationDate": 1680360571182,
+      "contentHash": "9cabed9ef7a50ac61b985f1a72002f52",
+      "sourceName": "contracts/ballot/PreferenceBallot.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Ballot.sol",
+        "../Election.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "PreferenceBallot"
+      ]
+    },
+    "E:\\GSoC '23\\Agora blockchain\\agora-blockchain\\server\\contracts\\resultCalculator\\GeneralResults.sol": {
+      "lastModificationDate": 1680360571183,
+      "contentHash": "a1342629910813fdd8d4f2888a1829fe",
+      "sourceName": "contracts/resultCalculator/GeneralResults.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ResultCalculator.sol",
+        "../ballot/Ballot.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "GeneralResults"
+      ]
+    },
+    "E:\\GSoC '23\\Agora blockchain\\agora-blockchain\\server\\contracts\\resultCalculator\\Oklahoma.sol": {
+      "lastModificationDate": 1680360571183,
+      "contentHash": "f33a67dc18862622706e917938d4a492",
+      "sourceName": "contracts/resultCalculator/Oklahoma.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ResultCalculator.sol",
+        "../ballot/Ballot.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "Oklahoma"
+      ]
+    },
+    "E:\\GSoC '23\\Agora blockchain\\agora-blockchain\\server\\contracts\\ballot\\ScoreBallot.sol": {
+      "lastModificationDate": 1680360571183,
+      "contentHash": "c00f6f2103e37404da7afe68fd673330",
+      "sourceName": "contracts/ballot/ScoreBallot.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Ballot.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "ScoreBallot"
+      ]
+    },
+    "E:\\GSoC '23\\Agora blockchain\\agora-blockchain\\server\\contracts\\BrightID.sol": {
+      "lastModificationDate": 1680360571180,
+      "contentHash": "f44d284b10d72b09e3d03ec636c3c3a5",
+      "sourceName": "contracts/BrightID.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "BrightID"
+      ]
+    },
+    "E:\\GSoC '23\\Agora blockchain\\agora-blockchain\\server\\contracts\\Migrations.sol": {
+      "lastModificationDate": 1680360571181,
+      "contentHash": "512a1ec84b6cadea223e57ea3601a1a9",
+      "sourceName": "contracts/Migrations.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "Migrations"
+      ]
+    }
+  }
+}
